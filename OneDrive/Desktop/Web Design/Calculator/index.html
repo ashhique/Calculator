@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="main">
+        <div class="calc">
+            <div>
+                <input type="text" id="display" placeholder="0">
+            </div>
+        <div class="top-slide">
+            <div class="num-side">
+                <div class="clear">
+                    <button class="buttons" onclick="clr()">C</button>
+                    <button class="buttons" onclick="del()">Del</button>
+                    <button class="buttons" onclick="clicked('%')">%</button>
+                </div>
+                <div class="num">
+                    <button class="num-buttons" onclick="clicked(7)">7</button>
+                    <button class="num-buttons" onclick="clicked(8)">8</button>
+                    <button class="num-buttons" onclick="clicked(9)">9</button>
+                    <button class="num-buttons" onclick="clicked(4)">4</button>
+                    <button class="num-buttons" onclick="clicked(5)">5</button>
+                    <button class="num-buttons" onclick="clicked(6)">6</button>
+                    <button class="num-buttons" onclick="clicked(1)">1</button>
+                    <button class="num-buttons" onclick="clicked(2)">2</button>
+                    <button class="num-buttons" onclick="clicked(3)">3</button>
+                </div>
+            </div>
+            <div class="fun">
+                <button class="fun-buttons" onclick="clicked('+')">+</button>
+                    <button class="fun-buttons" onclick="clicked('-')">-</button>
+                    <button class="fun-buttons" onclick="clicked('*')">x</button>
+                    <button class="fun-buttons" onclick="clicked('/')">÷</button>
+            </div>
+        </div>
+        <div class="bottom-slide">
+            <div class="zero">
+                <button class="num-buttons" onclick="clicked('.')">.</button>
+                <button class="num-buttons" onclick="clicked(0)">0</button>
+                </div>
+            <div class="equal">
+                <button class="equalButton" onclick="equalClick()">=</button>
+               </div>
+        </div>    
+    </div>
+</body>
+</html>
